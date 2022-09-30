@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+header{
+  margin: 20px;
+  background:linear-gradient(#C4D8C4, #FFFFFF);
+  padding: 10px;
+  box-shadow: 0 0 20px 0 #687568;
+}
+
+h1{
+  color: #687568;
+  font-family: 'courier new', monospace;
+  font-size: 40px;
+}
+
+h3 {
+  color: #ffffff;
+  font-family: 'courier new', monospace;
+  font-size: 20px;
+}
+
+body {
+  background-color: #DFEADF;
+  color: #687568;
+}
+
+main {
+  width: 60%; /* set the width to around 60% to get a "fluid"/responsive design */
+  margin: auto;
+}
+
+p {
+  width: 60%;
+  margin: 10px 0 10px 0;
+  font-family: 'courier new', monospace;
+  font-size: 20px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #C4D8C4;
+}
+a:visited {
+  text-decoration: none;
+  color: #C4D8C4;
+}
+a:active {
+  text-decoration: none;
+  color: #C4D8C4;
+}
+a:hover {
+  text-decoration: none;
+  color: #687568;
+}
+
+.button {
+  border: 2px solid #C4D8C4;
+  padding: 10px;
+  background-color: #ffffff;
+  margin: 20px 500px 20px 500px;
+  font-size: 20px;
+  font-family: 'courier new', monospace;
+  box-shadow: 0 0 10px 0 #687568;
+}
+
+/* In CSS:
+How do I center the body text while also aligning it?
+How do I change the style of the bottom link without affecting the other links? */
+
+/* section {
+  /* border: 1px solid #ffffff; /* using borders helps visualize the way content is behaving, you can use them in the design process and take them out later */
+  /* overflow: auto; /* "clearfix solution" you can play with this to see what you like */
+
+footer {
+  margin: 10px;
+  background: linear-gradient(#FFFFFF, #C4D8C4);
+  padding: 20px;
+  color: #687568;
+  box-shadow: 0 0 20px 0 #687568;
+}
