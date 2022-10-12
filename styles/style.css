@@ -6,7 +6,7 @@ personalize this portfolio page using google fonts, different colors, different 
     margin: 0 auto;
 }
 body{
-    background-color: white;
+    background-color: #000000;
 }
 
 header, footer {
@@ -14,13 +14,25 @@ header, footer {
     justify-content: center;
     width: 100%;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid #FFFFFF;
+    box-shadow: 20px 0 20px 0 #FFFFFF; 
     /* background-color: rgb(82, 99, 69);  play with a color scheme! */
 }
 
 main {
     font-family: 'Times New Roman', Times, serif; /* try using a google font instead*/
-    border: 1px, solid, black;
+    border: 1px, solid, #FFFFFF;
+}
+
+article {
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px 0 #6faafc;
+    text-align: center;
+}
+
+a:link, a:active, a:hover, a:visited {
+    color: #FFFFFF;
 }
 
 nav {
@@ -46,7 +58,7 @@ nav {
 
 #projects-grid{
     display: grid;
-    max-width: 960px;
+    max-width: 1200px;
     grid-template-columns: 1fr 1fr 1fr; /* what does fr mean?*/
     grid-template-rows: auto;
     grid-column-gap: 10px;
@@ -60,6 +72,7 @@ nav {
     text-align: center;
     max-width: 100%;
     padding: 40px 0px;
+    color: #FFFFFF;
 }
 
 .project_item {
@@ -72,7 +85,7 @@ nav {
     "image description";
     grid-column-gap: 15px;
     align-items: center;
-    background: rgba(232, 232, 231, 0.5); /*  play with color*/
+    background: #6faafc; /*  play with color*/
 }
 
 .project_image { 
@@ -97,7 +110,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    border-top: 1px solid black; /* again, play with this styling*/
+    border-top: 1px solid #FFFFFF; /* again, play with this styling*/
     margin-top: 2rem;
 
 }
