@@ -7,11 +7,9 @@ personalize this portfolio page using google fonts, different colors, different 
 }
 body{
     background-color: #000000;
-    font-family: 'courier new', monospace;
 }
 
 header, footer {
-    font-family: 'courier new', monospace;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -31,7 +29,6 @@ article {
     padding: 20px;
     box-shadow: 0 0 20px 0 #6faafc;
     text-align: center;
-    font-family: 'courier new', monospace;
 }
 
 a:link, a:active, a:hover, a:visited {
@@ -93,6 +90,7 @@ nav {
 
 .project_image { 
     grid-area: image; 
+    box-shadow: 0 0 20px 0 #FFFFFF;
 }
 .project_number { 
     grid-area: number; 
