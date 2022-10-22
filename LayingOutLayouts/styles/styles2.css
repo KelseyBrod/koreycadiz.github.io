@@ -9,9 +9,9 @@
 .grid-container {
   display: grid;
   grid-template-areas:
-    'float float float float float float'
-    'flexbox flexbox flexbox flexbox flexbox flexbox'
-    'grid grid grid grid grid grid';
+    'float'
+    'flexbox'
+    'grid';
   gap: 60px;
   background: #000000;
   padding: 80px 20px 80px 20px;
@@ -72,7 +72,7 @@ a:link, a:active, a:hover, a:visited {
     color: #FFFFFF;
 }
 
-.float-example3 {
+.float-example2 {
     float: right;
     background: #000000;
     border: 10px solid #FFFFFF;
@@ -130,7 +130,7 @@ a:link, a:active, a:hover, a:visited {
 }
 
     
-    @media only screen and (min-width: 600px) and (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
       header{
           background: #000000;
           box-shadow: 0 0 20px 0 #dbb4ed;
@@ -147,6 +147,7 @@ a:link, a:active, a:hover, a:visited {
             'float'
             'flexbox'
             'grid';
+        justify-content: space-evenly; 
       }
       .grid-container > div {
         background: #000000;
