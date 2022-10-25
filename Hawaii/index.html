@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Hawaii </title>
+    <meta charset="UTF-8" lang="en, hwn" dir="ltr">
+    <meta name="keywords" content="Hawaii">
+    <meta name="description" content="Some information about Hawaii">
+    <meta name="author" content="Korey Cadiz">
+    <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <header>
+
+    </header>
+    <body>
+      <div class="grid-container">
+        <div class="time">
+          <h2>Current Date and Time in Your Area</h2>
+            <h4 id="p1"></h4>
+        </div>
+        <div class="HItime">
+          <h2> Current Date and Time in Hawaii</h2>
+            <h4 id="p2"></h4>
+        </div>
+        <div class="main">
+          <p> <strong> Each island has a designated color. Click the buttons to see them. </strong> </p>
+          <br>
+          <br>
+          <button type="button" onclick="Hawaii()">Hawai'i</button>
+          <button type="button" onclick="Maui()">Maui</button>
+          <button type="button" onclick="Oahu()">O'ahu</button>
+          <button type="button" onclick="Kauai()">Kaua'i</button>
+          <button type="button" onclick="Molokai()">Moloka'i</button>
+          <button type="button" onclick="Lanai()">Lāna'i</button>
+          <button type="button" onclick="Niihau()">Ni'ihau</button>
+          <button type="button" onclick="Kahoolawe()">Kaho'olawe</button>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+      <script>
+        var date = new Date();
+        var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+        var current_time = date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
+        var date_time = current_date+" "+current_time;	
+        document.getElementById("p1").innerHTML = date_time;
+
+        var HIdate = new Date();
+	      var HIcurrent_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+	      var HIcurrent_time = date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
+	      var HIdate_time = HIcurrent_date+" "+HIcurrent_time;	
+	      document.getElementById("p2").innerHTML = HIdate_time;
+
+        function Hawaii() {document.body.style.backgroundColor= "red";}
+        function Maui() {document.body.style.backgroundColor= "pink";}
+        function Oahu() {document.body.style.backgroundColor= "yellow";}
+        function Kauai() {document.body.style.backgroundColor= "purple";}
+        function Molokai() {document.body.style.backgroundColor= "green";}
+        function Lanai() {document.body.style.backgroundColor= "orange";}
+        function Niihau() {document.body.style.backgroundColor= "white";}
+        function Kahoolawe() {document.body.style.backgroundColor= "grey";}
+      </script>
+    </body>
+</html>
