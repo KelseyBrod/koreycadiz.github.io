@@ -40,26 +40,27 @@
         </div>
       </div>
       <script>
-        var date = new Date();
-        var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
-        var current_time = date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
-        var date_time = current_date+" "+current_time;	
+        let date = new Date();
+        let current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+        let current_time = date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
+        let date_time = current_date+" "+current_time;	
         document.getElementById("p1").innerHTML = date_time;
 
-        var HIdate = new Date();
-	      var HIcurrent_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
-	      var HIcurrent_time = date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
-	      var HIdate_time = HIcurrent_date+" "+HIcurrent_time;	
+        let HIdate = new Date().toLocaleString("en-US", {timeZone: "America/Los_Angeles"});
+	      let HIcurrent_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+	      let HIcurrent_time = date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
+	      let HIdate_time = HIcurrent_date+" "+HIcurrent_time;	
 	      document.getElementById("p2").innerHTML = HIdate_time;
 
-        function Hawaii() {document.body.style.backgroundColor= "red";}
-        function Maui() {document.body.style.backgroundColor= "pink";}
-        function Oahu() {document.body.style.backgroundColor= "yellow";}
-        function Kauai() {document.body.style.backgroundColor= "purple";}
-        function Molokai() {document.body.style.backgroundColor= "green";}
-        function Lanai() {document.body.style.backgroundColor= "orange";}
-        function Niihau() {document.body.style.backgroundColor= "white";}
-        function Kahoolawe() {document.body.style.backgroundColor= "grey";}
+        
+        function Hawaii() {document.body.style.background= "red";}
+        function Maui() {document.body.style.background= "pink";}
+        function Oahu() {document.body.style.background= "yellow";}
+        function Kauai() {document.body.style.background= "purple";}
+        function Molokai() {document.body.style.background= "green";}
+        function Lanai() {document.body.style.background= "orange";}
+        function Niihau() {document.body.style.background= "white";}
+        function Kahoolawe() {document.body.style.background= "grey";}
       </script>
     </body>
 </html>
