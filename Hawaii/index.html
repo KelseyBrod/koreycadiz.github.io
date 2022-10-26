@@ -25,8 +25,8 @@
           <p> <strong> Each island has a designated color. Click the buttons to see them. </strong> </p>
           <br>
           <br>
-          <button type="button" onclick="Hawaii()">Hawai'i</button>
-          <button type="button" onclick="Maui()">Maui</button>
+          <button type="button" onclick="Hawaii()" id="button">Hawai'i</button>
+          <button type="button" onclick="Maui()" id="button">Maui</button>
           <button type="button" onclick="Oahu()">O'ahu</button>
           <button type="button" onclick="Kauai()">Kaua'i</button>
           <button type="button" onclick="Molokai()">Moloka'i</button>
@@ -41,26 +41,50 @@
       </div>
       <script>
         let date = new Date();
-        let current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+        let month = date.getMonth()+1;
+        let HIcurrent_time;
+
+        let current_date = date.getFullYear()+"-"+ month +"-"+ date.getDate();
         let current_time = date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
         let date_time = current_date+" "+current_time;	
         document.getElementById("p1").innerHTML = date_time;
 
         let HIdate = new Date().toLocaleString("en-US", {timeZone: "America/Los_Angeles"});
-	      let HIcurrent_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
-	      let HIcurrent_time = date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
+	      let HIcurrent_date = date.getFullYear()+"-"+ month +"-"+ date.getDate();
+        if (month>3 && month<11){
+          HIcurrent_time= (date.getHours()-6)+":"+date.getMinutes()+":"+ date.getSeconds();
+          console.log(month);
+        } else {
+          HIcurrent_time = (date.getHours()-5)+":"+date.getMinutes()+":"+ date.getSeconds();
+        }
+	      
 	      let HIdate_time = HIcurrent_date+" "+HIcurrent_time;	
 	      document.getElementById("p2").innerHTML = HIdate_time;
 
         
-        function Hawaii() {document.body.style.background= "red";}
-        function Maui() {document.body.style.background= "pink";}
-        function Oahu() {document.body.style.background= "yellow";}
-        function Kauai() {document.body.style.background= "purple";}
-        function Molokai() {document.body.style.background= "green";}
-        function Lanai() {document.body.style.background= "orange";}
-        function Niihau() {document.body.style.background= "white";}
-        function Kahoolawe() {document.body.style.background= "grey";}
+        function Hawaii() {document.body.style.background= "red";
+          document.body.style.color= "white";
+          document.btn.style.color= "white";}
+        function Maui() {document.body.style.background= "pink";
+          document.body.style.color= "black";
+          document.style.button.color= "black";}
+        function Oahu() {document.body.style.background= "yellow";
+          document.body.style.color= "black";
+          document.btn.style.color= "black";}
+        function Kauai() {document.body.style.background= "purple";
+          document.body.style.color= "white";}
+        function Molokai() {document.body.style.background= "green";
+          document.body.style.color= "white";
+          document.btn.style.color= "white";}
+        function Lanai() {document.body.style.background= "orange";
+          document.body.style.color= "black";
+          document.btn.style.color= "black";}
+        function Niihau() {document.body.style.background= "white";
+          document.body.style.color= "black";
+          document.btn.style.color= "black";}
+        function Kahoolawe() {document.body.style.background= "grey";
+          document.body.style.color= "white";
+          document.btn.style.color= "white";}
       </script>
     </body>
 </html>
