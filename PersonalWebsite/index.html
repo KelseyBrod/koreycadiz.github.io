@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Personal Website </title>
+    <meta charset="UTF-8" lang="en" dir="ltr">
+    <meta name="keywords" content="website">
+    <meta name="description" content="personal website">
+    <meta name="author" content="Korey Cadiz">
+    <link rel="stylesheet" href="styles/style_home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Concert+One">
+    </head>
+      <header> 
+        <h2>
+          <div class="menu">
+            <div class="about"> <a href="pages/about.html">About</a> </div>
+          <div class="button">
+        <button type="button" onclick="light()" id="button" style="background: #fff6f0; color: #292929; border-style: #292929;"> <h4> Light Mode </h4> </button>
+        <button type="button" onclick="dark()" id="button" style="background: #292929; color: #fff6f0; border-style: #fff6f0;"> <h4> Dark Mode </h4> </button>
+          </div>
+            <div class="project"> <a href="pages/projects.html">Projects</a> </div>
+            <div class="contact"> <a href="pages/contact.html">Contact</a> </div>
+          </div>
+        </h2>
+     </header>
+      <body>
+        <div class="main">
+            <h4> Korey Cadiz is a student at Duke University 
+                <img src="images/20201110_westcampus_fall124_wilkinson-5s.gif" alt="Duke campus">
+                double-majoring in biology and evolutionary anthropology 
+                <img src="images/Cqevazj.gif" alt="evolution">
+                with a minor in chemistry. Her interests include science, anatomy, and dreaming about becoming a doctor 
+                <img src="images/tumblr_nbwxsi2SfM1t0t8uno1_1280.gif" alt="medicine">
+                someday. When she is not obsessing over academics 
+                <img src="images/200w.gif" alt="graduation">
+                and thinking about her future, she enjoys spending time with her favorite people, reading books, 
+                <img src="images/81820231015a598620ebdc574087637e.gif" alt="reading">
+                tutoring English, trying to exercise, and learning new things. 
+                <img src="images/giphy (1).gif" alt="learning">
+            </h4>
+    </div>
+    <script>
+        function light() {
+          document.body.style.background= "#fff6f0";
+          document.body.style.color= "#292929";}
+        function dark() {
+          document.body.style.background= "#292929";
+          document.body.style.color= "#fff6f0";}
+    </script>
+    </body>
+    </html>

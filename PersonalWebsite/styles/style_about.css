@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+body {
+    background-color: #f0fff4;
+    color: #000000;
+    font-family: 'Concert One', serif;
+}
+
+.button {
+    margin: 40px 0px 40px 100px;
+}
+
+.home {
+    margin: 40px 0px 40px 100px;
+}
+
+.project {
+    margin: 40px 0px 40px 100px;
+}
+
+.contact {
+    margin: 40px 0px 40px 100px;
+}
+
+.button {grid-area: button}
+.home {grid-area: home;}
+.project {grid-area: project;}
+.contact {grid-area: contact}
+.menu {
+  display: grid;
+  grid-template-areas:
+    'button home project contact';
+  padding: 10px;
+}
+
+.main {
+    margin: 40px 100px 200px 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+a:link, a:active, a:hover, a:visited {
+    color: #292929;
+    text-decoration: none;
+    border: solid 2px;
+    border-radius: 40%;
+    padding: 5px 20px 10px 20px;
+    background: #f0fff4; 
+    border-style: #292929;
+}
+
+button {
+    border-radius: 40%;
+    padding: 10px 20px 10px 20px;
+    font-family: 'Concert One', serif;
+}

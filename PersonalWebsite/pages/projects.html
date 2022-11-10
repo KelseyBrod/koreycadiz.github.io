@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Personal Website </title>
+    <meta charset="UTF-8" lang="en" dir="ltr">
+    <meta name="keywords" content="website">
+    <meta name="description" content="personal website">
+    <meta name="author" content="Korey Cadiz">
+    <link rel="stylesheet" href="../styles/style_projects.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Concert+One">
+    </head>
+      <header> 
+        <h2>
+          <div class="menu">
+            <div class="home"> <a href="../index.html">Home</a> </div>
+            <div class="about"> <a href="./about.html">About</a> </div>
+            <div class="button">
+              <button type="button" onclick="light()" id="button" style="background: #fff0fd; color: #292929; border-style: #292929;"> <h4> Light Mode </h4> </button>
+              <button type="button" onclick="dark()" id="button" style="background: #292929; color: #fff0fd; border-style: #fff0fd;"> <h4> Dark Mode </h4> </button>
+            </div>
+            <div class="contact"> <a href="./contact.html">Contact</a> </div>
+          </div>
+        </h2>
+     </header>
+      <body>
+        <div class="main">
+          <div id="project1" class="project_item"> 
+            <h4 class="project_title"><a href="/index.html">Learning WebDesign</a></h4> 
+            <h6 class="project_description"> This landing page depicts the various websites I created, where I learned new features of webdesigning in each. </h6>
+            <img class="project_image" src="" alt="project 1 image" width="240" height="200">
+          </div>
+          <div> 
+            <h4> Project 2 </h4> 
+            <h6> Description of Project 2 </h6>
+            <img class="project_image" src="" alt="project 2 image"/>
+          </div>
+          <div> 
+            <h4> Project 3 </h4> 
+            <h6> Description of Project 3 </h6>
+            <img class="project_image" src="" alt="project 3 image"/>
+          </div>
+          <div> 
+            <h4> Project 4 </h4> 
+            <h6> Description of Project 4 </h6>
+            <img class="project_image" src="" alt="project 4 image"> 
+          </div>
+          <div> 
+            <h4> Project 5 </h4> 
+            <h6> Description of Project 5 </h6>
+            <img class="project_image" src="" alt="project 5 image">
+          </div>
+          <div> 
+            <h4> Project 6 </h4> 
+            <h6> Description of Project 6 </h6>
+            <img class="project_image" src="" alt="project 6 image">
+          </div>
+    </div>
+    <script>
+      function light() {
+        document.body.style.background= "#fff0fd";
+        document.body.style.color= "#292929";}
+      function dark() {
+        document.body.style.background= "#292929";
+        document.body.style.color= "#fff0fd";}
+  </script>
+    </body>
+    </html>

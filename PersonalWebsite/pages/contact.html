@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Personal Website </title>
+    <meta charset="UTF-8" lang="en" dir="ltr">
+    <meta name="keywords" content="website">
+    <meta name="description" content="personal website">
+    <meta name="author" content="Korey Cadiz">
+    <link rel="stylesheet" href="../styles/style_contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Concert+One">
+    </head>
+      <header> 
+        <h2>
+          <div class="menu">
+            <div class="home"> <a href="../index.html">Home</a> </div>
+            <div class="about"> <a href="./about.html">About</a> </div>
+          <div class="button">
+            <button type="button" onclick="light()" id="button" style="background: #f0faff; color: #292929; border-style: #292929;"> <h4> Light Mode </h4> </button>
+            <button type="button" onclick="dark()" id="button" style="background: #292929; color: #f0faff; border-style: #f0faff;"> <h4> Dark Mode </h4> </button>
+          </div>
+            <div class="project"> <a href="./projects.html">Projects</a> </div>
+          </div>
+        </h2>
+     </header>
+      <body>
+        <div class="main">
+          <h4> Feel free to contact me via: </h4>
+          <h4> 
+            <button onclick="window.location.href='https://www.linkedin.com/in/korey-cadiz-0bba9b252/';" 
+            style="background: #f0faff; 
+                   color: #292929; 
+                   border-style: #292929;
+                   border-radius: 40%;
+                   font-size: 30px;
+                   margin: 40px 80px 0px 80px;">Linked-In</button>
+            <button onclick="window.location.href='mailto:korey.cadiz@duke.edu';"
+            style="background: #f0faff; 
+                   color: #292929; 
+                   border-style: #292929;
+                   border-radius: 40%;
+                   font-size: 30px;
+                   margin: 40px 80px 0px 80px;">Email Me</button>
+          </h4>
+      </div>
+    <script>
+      function light() {
+        document.body.style.background= "#f0faff";
+        document.body.style.color= "#292929";}
+      function dark() {
+        document.body.style.background= "#292929";
+        document.body.style.color= "#f0faff";}
+  </script>
+    </body>
+    </html>

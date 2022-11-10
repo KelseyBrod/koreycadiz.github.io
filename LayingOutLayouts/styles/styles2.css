@@ -91,6 +91,7 @@ a:link, a:active, a:hover, a:visited {
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 20px 0 #dbb4ed;
+    border: sold 2px;
 }
       
 .flex-example > div {

@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+body {
+    background-color: #fff0fd;
+    color: #000000;
+    font-family: 'Concert One', serif;
+}
+
+.button {
+    margin: 40px 0px 40px 100px;
+}
+
+.home {
+    margin: 40px 0px 40px 100px;
+}
+
+.about {
+    margin: 40px 0px 40px 100px;
+}
+
+.contact {
+    margin: 40px 0px 40px 100px;
+}
+
+.button {grid-area: button}
+.home {grid-area: home;}
+.about {grid-area: about;}
+.contact {grid-area: contact}
+.menu {
+  display: grid;
+  grid-template-areas:
+    'button home about contact';
+  padding: 10px;
+}
+
+.main {
+    margin: 80px 0px 200px 0px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main > div {
+    width: 360px;
+    margin: 40px 40px 40px 40px;
+    text-align: center;
+    line-height: 80px;
+    border: solid 2px;
+    border-radius: 40px;
+}
+
+h6 {
+    font-size: 15px;
+    margin: 0px 40px 0px 40px;
+}
+
+img {
+    border: solid 1px;
+    border-radius: 20%;
+    width: 240px;
+    height: 200px;
+    margin: 20px 0px 20px 0px;
+}
+
+a:link, a:active, a:hover, a:visited {
+    color: #292929;
+    text-decoration: none;
+    border: solid 2px;
+    border-radius: 40%;
+    padding: 5px 20px 10px 20px;
+    background: #fff0fd; 
+    border-style: #292929;
+}
+
+button {
+    border-radius: 40%;
+    padding: 10px 20px 10px 20px;
+    font-family: 'Concert One', serif;
+}
