@@ -108,3 +108,28 @@ button {
     padding: 10px 20px 10px 20px;
     font-family: 'Concert One', serif;
 }
+
+@media only screen and (max-width: 1200px) {
+    .main {
+      display: grid;
+      grid-template-areas: 
+          'project1 project2'
+          'project3 project4'
+          'project5 project6';
+      justify-content: space-evenly; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+      display: grid;
+      grid-template-areas: 
+          'project1'
+          'project2'
+          'project3'
+          'project4'
+          'project5'
+          'project6';
+      justify-content: space-evenly; 
+    }
+}
