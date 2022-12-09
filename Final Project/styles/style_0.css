@@ -1,4 +1,3 @@
-
 *{
     box-sizing: border-box;
     margin: 0 auto;
@@ -20,166 +19,44 @@ body {
     text-align: center;
 }
 
-#myProgress {
-  width: 100%;
-  background-color: #000000;
-}
-
-#myBar {
-  width: 1%;
-  height: 30px;
-  background-color: #FFFFFF;
-}
-
-/* https://alvarotrigo.com/blog/hamburger-menu-css/ */
-.top-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #FFF;
-    height: 100px;
-    padding: 5px 0;
-  }
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .menu > li {
-    margin: 0 1rem;
+/* Style the navigation menu */
+.topnav {
     overflow: hidden;
+    background-color: #000000;
+    position: relative;
   }
-
-.menu-button-container {
-    display: none;
-    height: 100%;
-    width: 30px;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-#menu-toggle {
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
     display: none;
   }
-
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-    display: block;
-    background-color: #fff;
-    position: absolute;
-    height: 4px;
-    width: 30px;
-    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    border-radius: 2px;
-  }
-
-.menu-button::before {
-    content: '';
-    margin-top: -8px;
-  }
-
-.menu-button::after {
-    content: '';
-    margin-top: 8px;
-  }
-
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-    margin-top: 0px;
-    transform: rotate(405deg);
-  }
-
-#menu-toggle:checked + .menu-button-container .menu-button .kanaeokana{
-    background: rgba(255, 255, 255, 0);
-  }
-
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-    margin-top: 0px;
-    transform: rotate(-405deg);
-  }
-
-
-  /* just styling everything under this media query but keeping the above in case you want to use it */
-
-  @media (max-width: 2000px) {
-    .menu-button-container {
-      display: flex;
-    }
-
-    .imgheader {
-        float: left;
-        background: #000000;
-        margin: 5px 20px 5px 20px;
-      }
-
-    .menu {
-      position: absolute;
-      top: 0;
-      margin-top: 100px;
-      left: 0;
-      flex-direction: column;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      z-index: 1;
-    }
-    #menu-toggle ~ .menu li {
-      height: 0;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-    #menu-toggle:checked ~ .menu li {
-      border: 1px solid #333;
-      height: 2.5em;
-      padding: 0.5em;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-    .menu > li {
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0.5em 0;
-      width: 100%;
-      color: white;
-      background-color: black;
-    }
-    .menu > li:not(:last-child) {
-      border-bottom: 1px solid #444;
-    }
-  }
-
-.nav-links, .nav-links:link, .nav-links:active, .nav-links:visited{
-    text-decoration: none;
-    color: #FFFFFF;
-    font-family: Verdana, sans-serif;
-    font-size: 20px;
-    text-align: center;
-  }
-
-
-.active {
-    background-color: #04AA6D;
+  /* Style navigation menu links */
+  .topnav a {
     color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
   }
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    float: right;
+    background: #000000;
+    margin: 5px 20px 5px 20px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav a.hover {
 
-
+  }
   /* Style the active link (or home/logo) */
-.imgheader {
+  .imgheader {
     float: left;
     background: #000000;
     margin: 5px 20px 5px 20px;
   }
+
 
 a:link, a:active, a:visited {
     text-decoration: none;
@@ -187,7 +64,7 @@ a:link, a:active, a:visited {
     font-family: Verdana, sans-serif;
     font-size: 40px;
     text-align: center;
-  }
+}
 a:hover {
     text-decoration: none;
     color: #FFFFFF;
@@ -195,7 +72,7 @@ a:hover {
     font-size: 50px;
     text-align: center;
     text-shadow: 1px 1px 5px #FFFFFF;
-  }
+}
 
 .kanaeokana {
     background-color: #242424;
@@ -204,14 +81,8 @@ a:hover {
     color: #FFFFFF;
     font-size: 80px;
     text-align: center;
-    vertical-align: center;
-    width: 100%;
-  }
+}
 
-h1 {
-    padding: 10% 0;
-     /* adding padding as example instead of using html breaks */
-  }
 
 .page1_part1 {
     background-color: #242424;
@@ -226,27 +97,29 @@ h1 {
     grid-template-areas:
       'page1_part1_text1'
       'page1_part1_text2';
-  }
+}
 .page1_part1_text1 {grid-area: page1_part1_text1;
     color: #FFFFFF;
     font-family: Verdana, sans-serif;
     text-align: center;
     font-size: 40px;
     margin: 120px 0px 20px 0px;
-  }
+}
 .page1_part1_text2 {grid-area: page1_part1_text2;
     color: #FFFFFF;
     font-family: Verdana, sans-serif;
     text-align: center;
     font-size: 20px;
     margin: 20px 300px 120px 300px;
-  }
+}
+
+
 .page1_part2 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-  }
+}
 .page1_part2_text1 {
     background-color: #242424; 
     background-position: center top; 
@@ -260,7 +133,7 @@ h1 {
     font-family: Verdana, sans-serif;
     font-size: 30px;
     text-align: center;
-  }    
+}    
 .page1_part2_text2 {
     background-color: #242424; 
     background-position: center center; 
@@ -274,7 +147,7 @@ h1 {
     font-family: Verdana, sans-serif;
     font-size: 30px;
     text-align: center;
-  }
+}
 .page1_part2_text3 {
     background-color: #242424; 
     background-position: center center; 
@@ -288,7 +161,7 @@ h1 {
     font-family: Verdana, sans-serif;
     font-size: 30px;
     text-align: center;
-  }
+}
 .page1_part2_text4 {
     background-color: #242424; 
     background-position: center top; 
@@ -302,7 +175,9 @@ h1 {
     font-family: Verdana, sans-serif;
     font-size: 30px;
     text-align: center;
-  }
+}
+
+
 .page1_part3 {
     background-color: #242424; 
     background-position: center top; 
@@ -317,7 +192,7 @@ h1 {
       'img1'
       'page1_part3_text1'
       'page1_part3_text2';
-  }
+}
 .img1 {grid-area:img1;}
 .page1_part3_text1 {grid-area: page1_part3_text1;
     color: #FFFFFF;
@@ -325,14 +200,16 @@ h1 {
     text-align: center;
     font-size: 40px;
     margin: 0px 0px 20px 0px;
-  }
+}
 .page1_part3_text2 {grid-area: page1_part3_text2;
     color: #FFFFFF;
     font-family: Verdana, sans-serif;
     text-align: center;
     font-size: 20px;
     margin: 0px 300px 120px 300px;
-  }
+}
+
+
 .page1_footer {
     filter: brightness(0.80);
     background: #000000;
@@ -341,12 +218,12 @@ h1 {
     color: #FFFFFF;
     font-family: Verdana, sans-serif;
     text-align: center;
-  }
+}
 .imgfooter {
     float: left;
     background: #000000;
     margin: 20px;
-  }
+}
 button {
     float: right;
     background: #000000;
@@ -355,4 +232,4 @@ button {
     color: #FFFFFF;
     font-family: Verdana, sans-serif;
     border: solid 1px #FFFFFF;
-  }
+}

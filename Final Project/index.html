@@ -6,51 +6,46 @@
     <meta name="keywords" content="website">
     <meta name="description" content="revamped website">
     <meta name="author" content="Korey Cadiz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/style_1.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock+Salt">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-
-    <header>
-
-      <div class="page1_header">
-        <div class="mobile-container">
-          <div class="topnav">
+  <body> 
+    <!-- header goes inside body -->
+    <header class ="top-nav">
+            <div>
             <img href="home" class="imgheader" src="http://kealaiwikuamoo.wpenginepowered.com/wp-content/uploads/2017/12/kanaeokana-logo-white-on-transparent-horizontal-with-text.png" alt="">
-            <div id="myLinks">
-              <a href="#news">News</a>
-              <a href="#contact">Contact</a>
-              <a href="#about">About</a>
-            </div>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-          </a>
-        </div>
-      </div>
-
+          </div>
+          <input id="menu-toggle" type="checkbox" />
+          <label class='menu-button-container' for="menu-toggle">
+          <div class='menu-button'></div>
+          </label>
+            <ul class ="menu">
+              <li><a href="#kamanao" class="nav-links">Ka Mana'o</a></li>
+              <li><a href="#paipai" class="nav-links">Paipai</a></li>
+              <li><a href="#papahoike" class="nav-links">Papa Hō'ike</a></li>
+              <li><a href="#waihona" class="nav-links">Waihona</a></li>
+              <li><a href="#ea" class="nav-links">Ea</a></li>
+              <li><a href="#moolelo" class="nav-links">Mo'olelo</a></li>
+            </ul>
     </header>
 
-
-    <body>
-
       <div class="kanaeokana">
-        <br>
         <h1> Kanaeokana </h1>
-        <br>
       </div>
 
       <div class="page1_part1">
         <div class="page1_part1_text1">
-          <h2> Ka Manao </h2>
+          <h2> <a href="...">Ka Mana'o</a> </h2>
         </div>
         <div class="page1_part1_text2">
           <p> Kanaeokana seeks to strengthen the lāhui and nurture the next generations of aloha ‘āina leaders by collaboratively developing and growing a Native Hawaiian education system built on a strong ʻōlelo Hawai‘i and ʻike Hawai‘i foundation. </p>
         </div>
       </div>
-
       <div class="page1_part2">
         <div class="page1_part2_text1">
           <br>
+          <!-- you could use padding on the div elements rather than breaks to center the content -->
           <br>
           <img src="https://kealaiwikuamoo.wpenginepowered.com/wp-content/uploads/2017/11/mea-icons-02-mauna.svg" alt="" width="150" height="150">
           <br>
@@ -90,17 +85,15 @@
           <p style="font-size: 15px; filter: brightness(0.80);"> Projects </p>
         </div>
       </div>
-
         <div class="page1_part3">
           <img class=img1 src="https://kealaiwikuamoo.wpenginepowered.com/wp-content/uploads/2017/11/mea-icons-04-manu.svg" alt="" width="150" height="150">
           <div class="page1_part3_text1">
-            <h2> Mo'olelo </h2>
+            <h2> <a href="...">Mo'olelo</a> </h2>
           </div>
           <div class="page1_part3_text2">
             <p> Moʻolelo gain power with each telling and retelling. It is no mistake that our kūpuna called each version of our moʻolelo a mana. The stories below are the kinds of stories that bring mana to our lāhui. Stories about how connecting to our culture brings success. About how our keiki know the importance of community. About how bright the future is when it is built upon nohona Hawaiʻi. Share these stories and help us all build our mana. </p>
           </div>
         </div>
-
         <div class="page1_footer">
           <img class=imgfooter src="http://kealaiwikuamoo.wpenginepowered.com/wp-content/uploads/2017/12/kanaeokana-logo-white-on-transparent-horizontal-with-text.png" alt="">
           <p> <button class="buttonfooter"> Contact </button> </p>
@@ -115,6 +108,25 @@
               x.style.display = "block";
             }
           }
+
+          var i = 0;
+            function move() {
+            if (i == 0) {
+            i = 1;
+            var elem = document.getElementById("myBar");
+            var width = 1;
+            var id = setInterval(frame, 10);
+            function frame() {
+              if (width >= 100) {
+                clearInterval(id);
+                i = 0;
+              } else {
+                width++;
+                elem.style.width = width + "%";
+                    }
+                  }
+                }
+              }
           </script>
 
     </body>
